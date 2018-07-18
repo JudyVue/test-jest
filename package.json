@@ -11,11 +11,11 @@
   "main": "index.js",
   "scripts": {
     "test-nolint": "jest --coverage",
-    "test": "npm run lint && jest --coverage",
+    "test": "eslint --fix . && jest --coverage",
     "testWatch": "jest --coverage --watchAll",
     "watch": "webpack-dev-server --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
-    "lint": "eslint --fix **/*.js"
+    "lint": "eslint --fix"
   },
   "keywords": [],
   "author": "",
