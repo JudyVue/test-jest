@@ -13,7 +13,7 @@ export default class ExpenseForm extends React.Component {
 
   handleSubmit = (event) => {
     event.preventDefault();
-    // by seeing "this.props", I know right away this component is a child component that sits somewhere else and expects props
+    // by seeing "this.props", I know right away this component is a child component that sits somewhere else and expects props from a parent
     this.props.handleAddExpense(this.state);
     this.setState(defaultState);
   }
